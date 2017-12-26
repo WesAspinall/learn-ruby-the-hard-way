@@ -18,3 +18,11 @@ puts !("testing" == "testing" && "Zed" == "Cool Guy") #true
 puts 1 == 1 && (!("testing" == 1 || 1 == 0)) #true
 puts "chunky" == "bacon" && (!(3 == 4 || 3 == 3)) #false
 puts 3 == 3 && (!("testing" == "testing" || "Ruby" == "Fun")) #false
+
+#will return second operand if it's not false
+puts "test" && "test" #test
+puts "true" && 1 #1
+puts 2 && 3 #3
+puts false && 3 #false
+puts 3 && false #false
+puts true && 1 #1
