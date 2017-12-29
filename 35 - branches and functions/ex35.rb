@@ -6,9 +6,14 @@ def gold_room
 
  # problem here is that if someone types
  # a string with no numbers in it,
- # it returns a zero... circling back
+ # or a string of nonsense with letters and numbers
+ # it returns a 0... 
+ # the function then converts the 0 to an integer.
+ # we want the function to exit if there's any non numbers entered,
+ # or if the number begins with 0 and has a length greater than 1
 
-  if choice.include?('0') || choice.include?('1')
+
+ if choice.include?('0') || choice.include?('1')
     how_much = choice.to_i
   else
     dead("Man, learn to type a number")
